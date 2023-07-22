@@ -64,11 +64,20 @@ class FirstFragment : Fragment() {
         }
 
 
-        binding.addFAB.setOnClickListener {
+        binding.fab.setOnClickListener {
             //ini button tambah jadi toko pasti null
             val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(null)
             findNavController().navigate(action)
-      }
+        }
+        binding.ContackButton.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_FiveFragment)
+        }
+        binding.Catalog.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_FourFragment)
+        }
+        binding.About.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_ThreeFragment)
+        }
     }
 
     override fun onDestroyView() {

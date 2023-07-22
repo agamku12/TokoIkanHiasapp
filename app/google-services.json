@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "108994176459",
+    "project_id": "tokoikanhiasappnew",
+    "storage_bucket": "tokoikanhiasappnew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108994176459:android:a1aa6b70eed0a35fd7c24e",
+        "android_client_info": {
+          "package_name": "com.tokoikanhias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108994176459-u0iv7k1hj183aforu68oo04je3jpj60p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAejTOUs8f-F_gnrn9TJZQPtxtV0IRMHJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108994176459-plkkd747fhjepud743pa78kmr42bocbo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

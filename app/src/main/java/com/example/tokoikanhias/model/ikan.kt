@@ -13,4 +13,8 @@ data class Ikan (
     val name: String,
     val type: String,
     val address: String,
+    val latitude: Double?,
+    val longitude: Double?
+
+
 ) : Parcelable

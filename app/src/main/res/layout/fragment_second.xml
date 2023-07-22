@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.SecondFragment">
+    android:orientation="vertical"
+    tools:context="ui.SecondFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,7 +21,9 @@
             android:layout_marginTop="16dp"
             android:text="Nama Toko"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
 
         <EditText
             android:id="@+id/nameEditText"
@@ -40,7 +44,9 @@
             android:text="Jenis Ikan Hias"
             app:layout_constraintEnd_toEndOf="@+id/nameEditText"
             app:layout_constraintStart_toStartOf="@+id/nameEditText"
-            app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
 
         <EditText
             android:id="@+id/TypeeditText"
@@ -64,7 +70,9 @@
             app:layout_constraintEnd_toEndOf="@+id/nameEditText"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/nameEditText"
-            app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
 
         <EditText
             android:id="@+id/AddresseditText"
@@ -79,32 +87,44 @@
             app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            app:layout_constraintEnd_toEndOf="@id/AddresseditText"
+            app:layout_constraintStart_toStartOf="@id/AddresseditText"
+            app:layout_constraintTop_toBottomOf="@id/AddresseditText"/>
+
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/AddresseditText"
-            app:layout_constraintTop_toBottomOf="@+id/AddresseditText" >
+            app:layout_constraintTop_toBottomOf="@+id/map">
 
             <Button
                 android:id="@+id/deleteButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="4dp"
-                android:visibility="gone"
-                android:text="Hapus" />
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/saveButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="4dp"
-                android:text="@string/save"/>
+                android:layout_weight="1"
+                android:text="@string/save" />
         </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+</ScrollView>

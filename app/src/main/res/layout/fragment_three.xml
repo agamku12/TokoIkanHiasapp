@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:text="Halo jenis ikan baik yang berhabitat di air tawar maupun di laut yang dipelihara bukan untuk konsumsi melainkan untuk memperindah taman/ruang tamu. Panorama bawah laut seringkali dinilai mempesona sehingga banyak orang yang rela menghabiskan uang banyak untuk menyelam dan menikmatinya."
+        android:textSize="21sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="349dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/icon" />
+</FrameLayout>
